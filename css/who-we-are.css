@@ -47,7 +47,7 @@
 .slide .content {
     text-align: center;
     color: #2A354B;
-    max-width: 100%;
+    max-width: 800px;
     padding: 0 2rem;
 }
 
@@ -55,4 +55,17 @@
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: -18%;
+}
+
+.slide-2 h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.slide-2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    opacity: 0.9;
 }
