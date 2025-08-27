@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+.container {
+    background: #172C58;
+    height: 100vh;
+}
+
+.container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: 
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(255, 255, 255, 0.1) 100px,
+            rgba(255, 255, 255, 0.1) 101px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(255, 255, 255, 0.1) 100px,
+            rgba(255, 255, 255, 0.1) 101px
+        );
+    animation: linesUp 15s infinite linear;
+    pointer-events: none;
+}
+        
+@keyframes linesUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}

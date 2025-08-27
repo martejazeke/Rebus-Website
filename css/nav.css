@@ -1,0 +1,110 @@
+header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        .logo {
+            cursor: pointer;
+            margin-right: auto;
+            height: 4rem;
+            /* Logo fade in animation */
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUpLogo 0.8s ease forwards;
+        }
+
+        .nav__links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav__links li {
+            display: inline-block;
+            padding: 0px 25px;
+            cursor: pointer;
+
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .nav__links li:nth-child(1) {
+            animation: fadeUp 0.8s ease 0.2s forwards;
+        }
+
+        .nav__links li:nth-child(2) {
+            animation: fadeUp 0.8s ease 0.4s forwards;
+        }
+
+        .nav__links li:nth-child(3) {
+            animation: fadeUp 0.8s ease 0.6s forwards;
+        }
+
+        .nav__links li a {
+            display: inline-block;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 5px;
+            color: #ededed;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav__links li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ededed;
+            transition: width 0.3s ease;
+        }
+
+        .nav__links li a:hover::after {
+            width: 100%;
+        }
+
+        .nav__links li a:hover {
+            color: #ffffff;
+        }
+
+        .contact {
+            /* Contact button fade in animation */
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease 0.8s forwards;
+        }
+
+        .contact button {
+            padding: 12px 25px;
+            background-color: #ededed;
+            color: #2A354B;
+            border: none;
+            border-radius: .25rem;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact button:hover {
+            background: #d6d5d5;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUpLogo {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

@@ -1,0 +1,116 @@
+.hero-title{
+    color: #ededed;
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+    margin: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 70%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease 1s forwards;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card{
+    padding: 1rem;
+    text-align: center;
+    color: #ededed;
+    opacity: 0;
+    transform: translateY(30px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-card:nth-child(1) {
+    animation: fadeUp 0.8s ease 1.4s forwards;
+}
+
+.service-card:nth-child(2) {
+    animation: fadeUp 0.8s ease 1.6s forwards;
+}
+
+.service-card:nth-child(3) {
+    animation: fadeUp 0.8s ease 1.8s forwards;
+}
+
+.service-card:hover {
+    transform: translateY(-8px); /* Lift up */
+    background: rgba(255, 255, 255, 0.05); /* Subtle background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.05); /* Slightly larger */
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-subtitle {
+    color: #ffffff; /* Brighter text */
+}
+
+.service-icon{
+    width: 4rem;
+    margin: 0 auto 1.5rem;
+    color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.service-icon img{
+    width: 4rem;
+    height: auto;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+}
+
+.service-title{
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #ededed;
+    font-family: 'Inter', sans-serif;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease 2s forwards;
+}
+.learn-more{
+    background: transparent;
+    border: 1px solid #ededed;
+    color: #ededed;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease 2s forwards;
+    margin-bottom: 4rem;
+}
+
+.learn-more:hover{
+    background: #ededed;
+    color: #2A354B;
+    transform: translateY(-2px);
+}
